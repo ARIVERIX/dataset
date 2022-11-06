@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script>"main.js"</script>
+</head>
+<body>
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Dataset</span>
+        </a>
+
+
+    </header>
+</div>
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">About the dataset</h1>
+                <p class="lead text-muted">Классификационная модель общественного транспорта, вы можете сами проверить работоспособность данной модели<p>
+                    <input type ="file" id="upload-file">
+                    <a href="#" class="btn btn-secondary my-2">Вывод</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <h1 class="fw-light">Types of transport in the dataset</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                         <img class="apps_feedRightAppsBlock__ava" src="https://cdn.motor1.com/images/mgl/G6E2Z/s1/500th-electric-buss-in-moscow.jpg" width="100%" height="225">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Avtobus</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://s-krylov.ru/photos/84bde45da52be44408693e3d326f2368.jpg" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Electrichka</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://www.zr.ru/d/story/68/823144/1445981553_00_taxi_marshrut_zr_11_15.jpg" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Marshrutka</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Метро_Поезд_Москва_2020.jpg" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Metro</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://www.ridus.ru/images/2020/8/6/1131291/in_article_42a7e8ffc2.png" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Monorels</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+
+
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://www.trn-news.ru/Ru/Upload/Image/hjkhge45678.jpeg" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Samolet</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://пк-тс.рф/images/img/news/2020-06-01/dsc_5720.jpg" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Tramvai</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+
+                        <div class="card shadow-sm">
+                            <img class="apps_feedRightAppsBlock__ava" src="https://transphoto.org/photo/13/77/28/1377280.jpg" width="100%" height="225">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Troleybus</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">UP🠕</a>
+        </p>
+        <p class="mb-1">Dataset built in 2022 ©</p>
+</footer>
+</body>
+</html>
